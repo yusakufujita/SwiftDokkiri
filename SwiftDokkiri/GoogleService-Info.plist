@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>793844796800-cer8aadbj3ae7drump3ojkdlqov6ue9d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.793844796800-cer8aadbj3ae7drump3ojkdlqov6ue9d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXnm8WwBVAjF5pey7H8Fzk_7sKzvftWro</string>
+	<key>GCM_SENDER_ID</key>
+	<string>793844796800</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hanjirou.SwiftDokkiri</string>
+	<key>PROJECT_ID</key>
+	<string>swiftdokkiri</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swiftdokkiri.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:793844796800:ios:00f8c3794cb2e1414c0565</string>
+	<key>DATABASE_URL</key>
+	<string>https://swiftdokkiri.firebaseio.com</string>
+</dict>
+</plist>
