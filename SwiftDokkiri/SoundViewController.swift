@@ -12,7 +12,7 @@ import AVFoundation
 
 class SoundViewController: UIViewController, AVAudioPlayerDelegate {
 
-    var audioPlayer: AVAudioPlayer!
+    private var audioPlayer: AVAudioPlayer!
     
     @IBOutlet weak var imageView: UIImageView!
 
