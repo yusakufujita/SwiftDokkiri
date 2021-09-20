@@ -8,5 +8,4 @@ target 'SwiftDokkiri' do
   # Pods for SwiftDokkiri
    pod 'Firebase/Analytics'
    pod 'Firebase/AdMob'
-
 end
