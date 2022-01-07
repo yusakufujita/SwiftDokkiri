@@ -75,7 +75,6 @@ class Sound2ViewController: UIViewController,AVAudioPlayerDelegate {
         print("attitude roll :\(x)")
         print("attitude pitch :\(y)")
         if x1+y1 < 1 {
-//            let storyboard = self.storyboard!
 //            let nextView = storyboard.instantiateViewController(withIdentifier: "Scene1ViewController")
 //            self.present(nextView, animated: true, completion: nil)
               self.performSegue(withIdentifier: "Scene1", sender: nil)
