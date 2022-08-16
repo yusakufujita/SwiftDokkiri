@@ -425,36 +425,6 @@
             </objects>
             <point key="canvasLocation" x="3048.8000000000002" y="2216.9415292353824"/>
         </scene>
-        <!--Sound View Controller-->
-        <scene sceneID="FwA-Q4-L79">
-            <objects>
-                <viewController storyboardIdentifier="skull" id="Xu2-rv-eLN" customClass="SoundViewController" customModule="びっくりアプリ" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e7i-IY-AZ4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angel-2401263_1920" translatesAutoresizingMaskIntoConstraints="NO" id="dB4-gS-Mga">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="j2v-VW-pZc"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="dB4-gS-Mga" firstAttribute="leading" secondItem="j2v-VW-pZc" secondAttribute="leading" id="5ct-kj-3jB"/>
-                            <constraint firstItem="dB4-gS-Mga" firstAttribute="centerY" secondItem="e7i-IY-AZ4" secondAttribute="centerY" id="832-0M-gYj"/>
-                            <constraint firstItem="dB4-gS-Mga" firstAttribute="bottom" secondItem="j2v-VW-pZc" secondAttribute="bottom" id="Hee-Kk-JEO"/>
-                            <constraint firstItem="dB4-gS-Mga" firstAttribute="centerX" secondItem="e7i-IY-AZ4" secondAttribute="centerX" id="cLx-Q5-B7b"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Uv1-yy-9LN"/>
-                    <connections>
-                        <outlet property="imageView" destination="dB4-gS-Mga" id="qTx-Q2-n34"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1vb-zc-dka" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3008.8000000000002" y="133.5832083958021"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rkc-Gx-azg">
             <objects>
@@ -475,7 +445,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="angel-2401263_1920" width="1333" height="1920"/>
         <image name="calling-1299741_1280" width="804" height="1280"/>
         <image name="cat-4644008_1920" width="1280" height="1920"/>
         <image name="egypt-21157_1920" width="1280" height="1920"/>
