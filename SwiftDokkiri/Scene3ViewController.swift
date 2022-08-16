@@ -14,7 +14,7 @@ class Scene3ViewController: UIViewController {
     @IBAction func shareAction(_ sender: Any) {
         
         let text = "私は、ビビリ度3でした"
-        let image: UIImage =  UIImage(named: "AppIcon")!
+        let image: UIImage =  UIImage(named: "S__54313005")!
         let shareUrl = "https://apps.apple.com/jp/app/びっくりアプリ/id1508282901?fbclid=IwAR0R2C5g2LaGwthNTW8qj-1XEG7Yy6Va3sFXdH_zBqSnqnHqF7bFgsA3V0s"
         let shareItems = [text,image,shareUrl] as [Any]
         let controller = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)

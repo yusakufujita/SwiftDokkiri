@@ -27,8 +27,8 @@ class SoundViewController: UIViewController, AVAudioPlayerDelegate {
     var a = Int.random(in: 0..<10)
     func random() {
         if a <= 4{
-                                //値渡しのコード
-                                //セグエでなく画像で変える
+                    //値渡しのコード
+                    //セグエでなく画像で変える
             let image1:UIImage = UIImage(named:"skull-765477_1920")!
             self.imageView.image = image1
             playSound(name: "explosion")
