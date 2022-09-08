@@ -78,16 +78,19 @@ class JudgementViewController: UIViewController,AVAudioPlayerDelegate {
             //            let nextView = storyboard.instantiateViewController(withIdentifier: "Scene1ViewController")
             //            self.present(nextView, animated: true, completion: nil)
             self.performSegue(withIdentifier: "Scene1", sender: nil)
+            navigationController?.viewControllers.removeAll(where: { $0 === self }) //  NavigationController の viewControllers スタックから削除することのよってJudgementViewControllerを飛ばせる
         }else if x1+y1 < 4 {
             //            let storyboard = self.storyboard!
             //            let nextView = storyboard.instantiateViewController(withIdentifier: "Scene2ViewController")
             //            self.present(nextView, animated: true, completion: nil)
             self.performSegue(withIdentifier: "Scene2", sender: nil)
+            navigationController?.viewControllers.removeAll(where: { $0 === self })  //  NavigationController の viewControllers スタックから削除することのよってJudgementViewControllerを飛ばせる
         }else {
             //            let storyboard = self.storyboard!
             //            let nextView = storyboard.instantiateViewController(withIdentifier: "Scene3ViewController")
             //            self.present(nextView, animated: true, completion: nil)
             self.performSegue(withIdentifier: "Scene3", sender: nil)
+            navigationController?.viewControllers.removeAll(where: { $0 === self })  //  NavigationController の viewControllers スタックから削除することのよってJudgementViewControllerを飛ばせる
         }
         
     }

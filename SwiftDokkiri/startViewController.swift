@@ -16,7 +16,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
-        
+        AppManager.addAdmob(viewController: self)
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.step), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
