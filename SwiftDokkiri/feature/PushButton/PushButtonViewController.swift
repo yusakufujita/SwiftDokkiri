@@ -14,6 +14,8 @@ class PushButtonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppManager.addAdmob(viewController: self)
+        self.navigationItem.hidesBackButton = true
         heartButton.layer.shadowOpacity = 0.7
         heartButton.layer.shadowRadius = 3
         heartButton.layer.shadowColor = UIColor.black.cgColor

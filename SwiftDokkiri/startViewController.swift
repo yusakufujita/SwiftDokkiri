@@ -20,6 +20,7 @@ class StartViewController: UIViewController {
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.step), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
+    
     @objc func step() {
         imageView.center.x += 10
         let imageWidth = imageView.bounds.width

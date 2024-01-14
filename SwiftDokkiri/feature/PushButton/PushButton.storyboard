@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SwO-da-wB8">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Push Button View Controller-->
+        <scene sceneID="fvF-XR-FoU">
+            <objects>
+                <viewController id="SwO-da-wB8" customClass="PushButtonViewController" customModule="びっくりアプリ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8B-mD-tvf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat-4644008_1920" translatesAutoresizingMaskIntoConstraints="NO" id="HIN-0j-VXJ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="押してみてにゃ❤️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDM-66-ZnD">
+                                <rect key="frame" x="73" y="407.66666666666669" width="247" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXy-KK-fzO">
+                                <rect key="frame" x="161.66666666666666" y="490.66666666666669" width="70" height="71.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <size key="titleShadowOffset" width="-1" height="0.0"/>
+                                <state key="normal" image="suit.heart.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="42" scale="large" weight="black"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F3R-sT-w5t" kind="push" id="I1g-fg-c4P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QP3-9V-bQW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="bottom" secondItem="QP3-9V-bQW" secondAttribute="bottom" id="0z0-eH-ioZ"/>
+                            <constraint firstItem="MXy-KK-fzO" firstAttribute="top" secondItem="NDM-66-ZnD" secondAttribute="bottom" constant="47" id="3c8-rQ-4A6"/>
+                            <constraint firstItem="MXy-KK-fzO" firstAttribute="centerX" secondItem="NDM-66-ZnD" secondAttribute="centerX" id="7Qe-sR-Vea"/>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="bottom" secondItem="QP3-9V-bQW" secondAttribute="bottom" id="BCs-al-TXJ"/>
+                            <constraint firstAttribute="bottom" secondItem="HIN-0j-VXJ" secondAttribute="bottom" id="JPQ-Y0-HPu"/>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="leading" secondItem="QP3-9V-bQW" secondAttribute="leading" id="M0q-se-bf7"/>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="top" secondItem="QP3-9V-bQW" secondAttribute="top" id="PCk-P9-Cd9"/>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="trailing" secondItem="QP3-9V-bQW" secondAttribute="trailing" id="RfX-ic-vHA"/>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="leading" secondItem="QP3-9V-bQW" secondAttribute="leading" id="S8z-6T-4bw"/>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="trailing" secondItem="QP3-9V-bQW" secondAttribute="trailing" id="jYV-gk-tsU"/>
+                            <constraint firstAttribute="trailing" secondItem="HIN-0j-VXJ" secondAttribute="trailing" id="obC-k2-42B"/>
+                            <constraint firstItem="NDM-66-ZnD" firstAttribute="centerX" secondItem="R8B-mD-tvf" secondAttribute="centerX" id="ocX-LJ-nH7"/>
+                            <constraint firstItem="NDM-66-ZnD" firstAttribute="centerY" secondItem="R8B-mD-tvf" secondAttribute="centerY" constant="-0.5" id="xoA-fE-Arw"/>
+                            <constraint firstItem="HIN-0j-VXJ" firstAttribute="leading" secondItem="R8B-mD-tvf" secondAttribute="leading" id="zbQ-sm-UKh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="ddB-WN-Ch1">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="JGn-zI-Ukc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="heartButton" destination="MXy-KK-fzO" id="yJt-Tl-FXj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7g-bF-oOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.8" y="133.5832083958021"/>
+        </scene>
+        <!--Judgement-->
+        <scene sceneID="dhp-u9-H97">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Judgement" id="F3R-sT-w5t" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dhY-Ig-6cu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lp0-Dp-JVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat-4644008_1920" width="1280" height="1920"/>
+        <image name="suit.heart.fill" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

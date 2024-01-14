@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fbm-bh-1Zl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Judgement View Controller-->
+        <scene sceneID="uFl-0Z-NWT">
+            <objects>
+                <viewController id="fbm-bh-1Zl" customClass="JudgementViewController" customModule="suprisedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rqo-yS-gol">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull-765477_1920" translatesAutoresizingMaskIntoConstraints="NO" id="6RX-pX-9BG">
+                                <rect key="frame" x="0.0" y="34" width="393" height="784"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5S-60-ujC">
+                                <rect key="frame" x="156" y="539" width="81" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="判定"/>
+                                <connections>
+                                    <action selector="judgementButtonAction:" destination="fbm-bh-1Zl" eventType="touchUpInside" id="YSC-Kf-voA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Bg-2W-viF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6RX-pX-9BG" firstAttribute="bottom" secondItem="9Bg-2W-viF" secondAttribute="bottom" id="0ap-is-eC5"/>
+                            <constraint firstItem="6RX-pX-9BG" firstAttribute="centerY" secondItem="Rqo-yS-gol" secondAttribute="centerY" id="5Xb-CS-Ri0"/>
+                            <constraint firstItem="6RX-pX-9BG" firstAttribute="centerX" secondItem="b5S-60-ujC" secondAttribute="centerX" id="B6n-FZ-zLc"/>
+                            <constraint firstItem="6RX-pX-9BG" firstAttribute="leading" secondItem="9Bg-2W-viF" secondAttribute="leading" id="Bhd-lB-IrI"/>
+                            <constraint firstItem="6RX-pX-9BG" firstAttribute="centerX" secondItem="Rqo-yS-gol" secondAttribute="centerX" id="PMg-7Q-gFA"/>
+                            <constraint firstItem="b5S-60-ujC" firstAttribute="top" secondItem="9Bg-2W-viF" secondAttribute="top" constant="480" id="dgZ-WD-9lu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4qV-ZS-rw7">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="4F6-IE-t7c"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aw3-AD-WLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="1205"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="skull-765477_1920" width="1280" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
