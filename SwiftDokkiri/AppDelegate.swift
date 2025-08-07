@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import GoogleMobileAds
+import AppTrackingTransparency
+import AdSupport
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -38,13 +40,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        // ここで許可リクエストを行う
+        requestAppTrackingTransparencyAuthorization()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    private func requestAppTrackingTransparencyAuthorization() {
+        if #available(iOS 14.5, *) {
+            // .notDeterminedの場合にだけリクエスト呼び出しを行う
+            guard ATTrackingManager.trackingAuthorizationStatus == .notDetermined else { return }
+            
+            // タイミングを遅らせる為に処理を遅延させる
+            DispatchQueue.main.async {
+                ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                    // リクエスト後の状態に応じた処理を行う
+                    switch status {
+                    case .authorized:
+                        print("🎉")
+                        //IDFA取得
+                        print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
+                    case .denied, .restricted, .notDetermined:
+                        print("😥")
+                    @unknown default:
+                        fatalError()
+                    }
+                })
+            }
+        }
+    }
 }
 
