@@ -66,6 +66,10 @@
                     <navigationItem key="navigationItem" id="DaN-SM-BRD">
                         <barButtonItem key="backBarButtonItem" title="戻る" id="tEo-ed-W33"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="uNJ-zw-Ito" id="wGf-r2-gno"/>
+                        <outlet property="startButton" destination="cEo-ig-2p8" id="8o1-br-TLN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0s-j5-89f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
