@@ -20,16 +20,7 @@ class StartViewController: UIViewController {
 //        print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
         AppManager.addAdmob(viewController: self)
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.step), userInfo: nil, repeats: true)
-        // スタートボタンのアクションを設定
-        startButton.addTarget(self, action: #selector(startButtonTapped(_:)), for: .touchUpInside)
-    }
-    
-    @objc func startButtonTapped(_ sender: UIButton) {
-        // MainMenu画面に遷移
-        pushViewControllerOverNavigation("MainMenu") { (vc: MainMenuViewController) in
-            // 依存注入
-            vc.hapticManager = self.appDelegate.hapticManager
-        }
+        // Do any additional setup after loading the view.
     }
     
     @objc func step() {
