@@ -62,6 +62,7 @@
                         <barButtonItem key="backBarButtonItem" title="戻る" id="JGn-zI-Ukc"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="backgroundImageView" destination="HIN-0j-VXJ" id="BKG-IMG-PBT"/>
                         <outlet property="heartButton" destination="MXy-KK-fzO" id="yJt-Tl-FXj"/>
                     </connections>
                 </viewController>

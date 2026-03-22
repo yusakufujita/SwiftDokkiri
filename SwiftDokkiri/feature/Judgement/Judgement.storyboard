@@ -43,6 +43,9 @@
                     <navigationItem key="navigationItem" id="4qV-ZS-rw7">
                         <barButtonItem key="backBarButtonItem" title="戻る" id="4F6-IE-t7c"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="6RX-pX-9BG" id="BKG-IMG-JDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aw3-AD-WLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

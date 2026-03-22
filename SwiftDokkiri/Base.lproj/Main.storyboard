@@ -43,7 +43,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="AUY-si-LNM" kind="push" id="Hns-5Q-ssF"/>
+                                    <action selector="startButtonTapped:" destination="hi9-bS-ffJ" eventType="touchUpInside" id="309714B3FD3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="びっくりアプリ❤️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-Br-cvy">

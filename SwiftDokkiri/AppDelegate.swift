@@ -16,7 +16,24 @@ import AdSupport
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    // MARK: - Dependency Injection
+    /// 依存関係を管理するプロパティ
+    lazy var settingsRepository: SettingsRepositoryProtocol = {
+        return SettingsRepository()
+    }()
+    
+    lazy var resultRepository: ResultRepositoryProtocol = {
+        return ResultRepository()
+    }()
+    
+    lazy var audioManager: AudioManager = {
+        return AudioManager(settingsRepository: settingsRepository)
+    }()
+    
+    lazy var hapticManager: HapticManager = {
+        return HapticManager(settingsRepository: settingsRepository)
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()

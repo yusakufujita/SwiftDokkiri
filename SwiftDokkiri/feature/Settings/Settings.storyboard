@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1A122DDEE77">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="603EBD7F891">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="1A122DDEE77" customClass="SettingsViewController" customModule="suprisedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="633A6CE9650">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SETTINGS-SCROLL-VIEW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SETTINGS-CONTENT-VIEW">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="638"/>
+                                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="89A8E61C933">
+                                <rect key="frame" x="20" y="60" width="353" height="1038"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7653EE5D3A">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音声" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D64FAD9B044">
+                                                <rect key="frame" x="0.0" y="11.999999999999998" width="32" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9121206B287">
+                                                <rect key="frame" x="304" y="6.6666666666666714" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9121206B287" firstAttribute="trailing" secondItem="F7653EE5D3A" secondAttribute="trailing" id="1A122DDEE78"/>
+                                            <constraint firstItem="9121206B287" firstAttribute="centerY" secondItem="F7653EE5D3A" secondAttribute="centerY" id="1A122DDEE79"/>
+                                            <constraint firstAttribute="height" constant="44" id="1A122DDEE7A"/>
+                                            <constraint firstItem="D64FAD9B044" firstAttribute="centerY" secondItem="F7653EE5D3A" secondAttribute="centerY" id="855408ACDF9"/>
+                                            <constraint firstItem="D64FAD9B044" firstAttribute="leading" secondItem="F7653EE5D3A" secondAttribute="leading" id="CE8374CCE84"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60B96359657">
+                                        <rect key="frame" x="0.0" y="74" width="353" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="振動" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B6A1242C4E">
+                                                <rect key="frame" x="0.0" y="11.999999999999998" width="32" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5E2B9678C05">
+                                                <rect key="frame" x="304" y="6.6666666666666572" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="1B6A1242C4E" firstAttribute="leading" secondItem="60B96359657" secondAttribute="leading" id="1A122DDEE7B"/>
+                                            <constraint firstItem="1B6A1242C4E" firstAttribute="centerY" secondItem="60B96359657" secondAttribute="centerY" id="1A122DDEE7C"/>
+                                            <constraint firstItem="5E2B9678C05" firstAttribute="trailing" secondItem="60B96359657" secondAttribute="trailing" id="1A122DDEE7D"/>
+                                            <constraint firstItem="5E2B9678C05" firstAttribute="centerY" secondItem="60B96359657" secondAttribute="centerY" id="1A122DDEE7E"/>
+                                            <constraint firstAttribute="height" constant="44" id="1A122DDEE7F"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-PREVIEW-CONTAINER">
+                                        <rect key="frame" x="0.0" y="148" width="353" height="430"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ゲーム開始画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-LABEL">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-PREVIEW-IMG">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="353" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="PBT-PREVIEW-HGT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-OVERLAY-VIEW">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="353" height="400"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-CHANGE-BTN">
+                                                        <rect key="frame" x="126.66666666666666" y="175" width="100" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="PBT-CHANGE-WIDTH"/>
+                                                            <constraint firstAttribute="height" constant="50" id="PBT-CHANGE-HEIGHT"/>
+                                                        </constraints>
+                                                        <state key="normal" title="変更">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pushButtonBackgroundButtonTapped:" destination="1A122DDEE77" eventType="touchUpInside" id="PBT-CHANGE-ACT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.4" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="PBT-CHANGE-BTN" firstAttribute="centerX" secondItem="PBT-OVERLAY-VIEW" secondAttribute="centerX" id="PBT-CHANGE-CENTERX"/>
+                                                    <constraint firstItem="PBT-CHANGE-BTN" firstAttribute="centerY" secondItem="PBT-OVERLAY-VIEW" secondAttribute="centerY" id="PBT-CHANGE-CENTERY"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-BKG-BTN">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="353" height="400"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="PBT-BKG-HGT"/>
+                                                </constraints>
+                                                <state key="normal" title="">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pushButtonBackgroundButtonTapped:" destination="1A122DDEE77" eventType="touchUpInside" id="PBT-BKG-ACT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="PBT-LABEL" firstAttribute="leading" secondItem="PBT-PREVIEW-CONTAINER" secondAttribute="leading" id="PBT-LABEL-LEAD"/>
+                                            <constraint firstItem="PBT-LABEL" firstAttribute="top" secondItem="PBT-PREVIEW-CONTAINER" secondAttribute="top" id="PBT-LABEL-TOP"/>
+                                            <constraint firstItem="PBT-PREVIEW-IMG" firstAttribute="leading" secondItem="PBT-PREVIEW-CONTAINER" secondAttribute="leading" id="PBT-IMG-LEAD"/>
+                                            <constraint firstItem="PBT-PREVIEW-IMG" firstAttribute="top" secondItem="PBT-LABEL" secondAttribute="bottom" constant="10" id="PBT-IMG-TOP"/>
+                                            <constraint firstAttribute="trailing" secondItem="PBT-LABEL" secondAttribute="trailing" id="PBT-LABEL-TRAIL"/>
+                                            <constraint firstAttribute="trailing" secondItem="PBT-PREVIEW-IMG" secondAttribute="trailing" id="PBT-IMG-TRAIL"/>
+                                            <constraint firstAttribute="bottom" secondItem="PBT-PREVIEW-IMG" secondAttribute="bottom" id="PBT-IMG-BOTTOM"/>
+                                            <constraint firstItem="PBT-OVERLAY-VIEW" firstAttribute="leading" secondItem="PBT-PREVIEW-IMG" secondAttribute="leading" id="PBT-OVERLAY-LEAD"/>
+                                            <constraint firstItem="PBT-OVERLAY-VIEW" firstAttribute="top" secondItem="PBT-PREVIEW-IMG" secondAttribute="top" id="PBT-OVERLAY-TOP"/>
+                                            <constraint firstItem="PBT-OVERLAY-VIEW" firstAttribute="trailing" secondItem="PBT-PREVIEW-IMG" secondAttribute="trailing" id="PBT-OVERLAY-TRAIL"/>
+                                            <constraint firstItem="PBT-OVERLAY-VIEW" firstAttribute="bottom" secondItem="PBT-PREVIEW-IMG" secondAttribute="bottom" id="PBT-OVERLAY-BOTTOM"/>
+                                            <constraint firstItem="PBT-BKG-BTN" firstAttribute="leading" secondItem="PBT-PREVIEW-IMG" secondAttribute="leading" id="PBT-BTN-LEAD"/>
+                                            <constraint firstItem="PBT-BKG-BTN" firstAttribute="top" secondItem="PBT-PREVIEW-IMG" secondAttribute="top" id="PBT-BTN-TOP"/>
+                                            <constraint firstItem="PBT-BKG-BTN" firstAttribute="trailing" secondItem="PBT-PREVIEW-IMG" secondAttribute="trailing" id="PBT-BTN-TRAIL"/>
+                                            <constraint firstItem="PBT-BKG-BTN" firstAttribute="bottom" secondItem="PBT-PREVIEW-IMG" secondAttribute="bottom" id="PBT-BTN-BOTTOM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-PREVIEW-CONTAINER">
+                                        <rect key="frame" x="0.0" y="608" width="353" height="430"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="判定画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-LABEL">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-PREVIEW-IMG">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="353" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="JDG-PREVIEW-HGT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-OVERLAY-VIEW">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="353" height="400"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-CHANGE-BTN">
+                                                        <rect key="frame" x="126.66666666666666" y="175" width="100" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="JDG-CHANGE-WIDTH"/>
+                                                            <constraint firstAttribute="height" constant="50" id="JDG-CHANGE-HEIGHT"/>
+                                                        </constraints>
+                                                        <state key="normal" title="変更">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="judgementBackgroundButtonTapped:" destination="1A122DDEE77" eventType="touchUpInside" id="JDG-CHANGE-ACT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.4" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="JDG-CHANGE-BTN" firstAttribute="centerX" secondItem="JDG-OVERLAY-VIEW" secondAttribute="centerX" id="JDG-CHANGE-CENTERX"/>
+                                                    <constraint firstItem="JDG-CHANGE-BTN" firstAttribute="centerY" secondItem="JDG-OVERLAY-VIEW" secondAttribute="centerY" id="JDG-CHANGE-CENTERY"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-BKG-BTN">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="353" height="400"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="JDG-BKG-HGT"/>
+                                                </constraints>
+                                                <state key="normal" title="">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="judgementBackgroundButtonTapped:" destination="1A122DDEE77" eventType="touchUpInside" id="JDG-BKG-ACT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="JDG-LABEL" firstAttribute="leading" secondItem="JDG-PREVIEW-CONTAINER" secondAttribute="leading" id="JDG-LABEL-LEAD"/>
+                                            <constraint firstItem="JDG-LABEL" firstAttribute="top" secondItem="JDG-PREVIEW-CONTAINER" secondAttribute="top" id="JDG-LABEL-TOP"/>
+                                            <constraint firstItem="JDG-PREVIEW-IMG" firstAttribute="leading" secondItem="JDG-PREVIEW-CONTAINER" secondAttribute="leading" id="JDG-IMG-LEAD"/>
+                                            <constraint firstItem="JDG-PREVIEW-IMG" firstAttribute="top" secondItem="JDG-LABEL" secondAttribute="bottom" constant="10" id="JDG-IMG-TOP"/>
+                                            <constraint firstAttribute="trailing" secondItem="JDG-LABEL" secondAttribute="trailing" id="JDG-LABEL-TRAIL"/>
+                                            <constraint firstAttribute="trailing" secondItem="JDG-PREVIEW-IMG" secondAttribute="trailing" id="JDG-IMG-TRAIL"/>
+                                            <constraint firstAttribute="bottom" secondItem="JDG-PREVIEW-IMG" secondAttribute="bottom" id="JDG-IMG-BOTTOM"/>
+                                            <constraint firstItem="JDG-OVERLAY-VIEW" firstAttribute="leading" secondItem="JDG-PREVIEW-IMG" secondAttribute="leading" id="JDG-OVERLAY-LEAD"/>
+                                            <constraint firstItem="JDG-OVERLAY-VIEW" firstAttribute="top" secondItem="JDG-PREVIEW-IMG" secondAttribute="top" id="JDG-OVERLAY-TOP"/>
+                                            <constraint firstItem="JDG-OVERLAY-VIEW" firstAttribute="trailing" secondItem="JDG-PREVIEW-IMG" secondAttribute="trailing" id="JDG-OVERLAY-TRAIL"/>
+                                            <constraint firstItem="JDG-OVERLAY-VIEW" firstAttribute="bottom" secondItem="JDG-PREVIEW-IMG" secondAttribute="bottom" id="JDG-OVERLAY-BOTTOM"/>
+                                            <constraint firstItem="JDG-BKG-BTN" firstAttribute="leading" secondItem="JDG-PREVIEW-IMG" secondAttribute="leading" id="JDG-BTN-LEAD"/>
+                                            <constraint firstItem="JDG-BKG-BTN" firstAttribute="top" secondItem="JDG-PREVIEW-IMG" secondAttribute="top" id="JDG-BTN-TOP"/>
+                                            <constraint firstItem="JDG-BKG-BTN" firstAttribute="trailing" secondItem="JDG-PREVIEW-IMG" secondAttribute="trailing" id="JDG-BTN-TRAIL"/>
+                                            <constraint firstItem="JDG-BKG-BTN" firstAttribute="bottom" secondItem="JDG-PREVIEW-IMG" secondAttribute="bottom" id="JDG-BTN-BOTTOM"/>
+                                        </constraints>
+                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="89A8E61C933" firstAttribute="leading" secondItem="SETTINGS-CONTENT-VIEW" secondAttribute="leading" constant="20" id="1A122DDEE81"/>
+                                            <constraint firstAttribute="trailing" secondItem="89A8E61C933" secondAttribute="trailing" constant="20" id="1A122DDEE82"/>
+                                            <constraint firstItem="89A8E61C933" firstAttribute="top" secondItem="SETTINGS-CONTENT-VIEW" secondAttribute="top" constant="60" id="1A122DDEE83"/>
+                                            <constraint firstAttribute="bottom" secondItem="89A8E61C933" secondAttribute="bottom" constant="20" id="SETTINGS-CONTENT-BOTTOM"/>
+                                            <constraint firstItem="89A8E61C933" firstAttribute="width" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="width" constant="-40" id="SETTINGS-CONTENT-WIDTH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SETTINGS-CONTENT-VIEW" firstAttribute="leading" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="leading" id="SCROLL-CONTENT-LEAD"/>
+                                    <constraint firstItem="SETTINGS-CONTENT-VIEW" firstAttribute="trailing" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="trailing" id="SCROLL-CONTENT-TRAIL"/>
+                                    <constraint firstItem="SETTINGS-CONTENT-VIEW" firstAttribute="top" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="top" id="SCROLL-CONTENT-TOP"/>
+                                    <constraint firstItem="SETTINGS-CONTENT-VIEW" firstAttribute="bottom" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="bottom" id="SCROLL-CONTENT-BOTTOM"/>
+                                    <constraint firstItem="SETTINGS-CONTENT-VIEW" firstAttribute="width" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="width" id="SCROLL-CONTENT-WIDTH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="246B5587B1F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SETTINGS-SCROLL-VIEW" firstAttribute="leading" secondItem="246B5587B1F" secondAttribute="leading" id="SCROLL-LEAD"/>
+                            <constraint firstItem="246B5587B1F" firstAttribute="trailing" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="trailing" id="SCROLL-TRAIL"/>
+                            <constraint firstItem="SETTINGS-SCROLL-VIEW" firstAttribute="top" secondItem="246B5587B1F" secondAttribute="top" id="SCROLL-TOP"/>
+                            <constraint firstItem="246B5587B1F" firstAttribute="bottom" secondItem="SETTINGS-SCROLL-VIEW" secondAttribute="bottom" id="SCROLL-BOTTOM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2FD4EF5F7AA"/>
+                    <connections>
+                        <outlet property="judgementBackgroundButton" destination="JDG-BKG-BTN" id="JDG-BKG-OUT"/>
+                        <outlet property="judgementChangeButton" destination="JDG-CHANGE-BTN" id="JDG-CHANGE-OUT"/>
+                        <outlet property="judgementOverlayView" destination="JDG-OVERLAY-VIEW" id="JDG-OVERLAY-OUT"/>
+                        <outlet property="judgementPreviewImageView" destination="JDG-PREVIEW-IMG" id="JDG-PREVIEW-OUT"/>
+                        <outlet property="pushButtonBackgroundButton" destination="PBT-BKG-BTN" id="PBT-BKG-OUT"/>
+                        <outlet property="pushButtonChangeButton" destination="PBT-CHANGE-BTN" id="PBT-CHANGE-OUT"/>
+                        <outlet property="pushButtonOverlayView" destination="PBT-OVERLAY-VIEW" id="PBT-OVERLAY-OUT"/>
+                        <outlet property="pushButtonPreviewImageView" destination="PBT-PREVIEW-IMG" id="PBT-PREVIEW-OUT"/>
+                        <outlet property="soundSwitch" destination="9121206B287" id="8C2995726E3"/>
+                        <outlet property="vibrationSwitch" destination="5E2B9678C05" id="54DFBD56E52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="444FE437C5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
